@@ -1,0 +1,14 @@
+# Monitor arrangement.
+output eDP-1 position 0,0
+output HDMI-A-1 position 1366,0
+
+# Wallpaper.
+output * background ~/Pictures/wallpapers/cross.jpg fill
+
+# Bar.
+bar {
+    swaybar_command waybar
+}
+
+# Window borders.
+default_border none

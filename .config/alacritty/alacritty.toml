@@ -1,0 +1,35 @@
+
+# Colors
+[colors]
+  [colors.primary]
+    foreground = "#00ffff"
+    background = "#000000"
+    dim_foreground = "#007d7d"
+
+  [colors.cursor]
+    text = "#000000"
+    cursor = "#00dddd"
+
+  [colors.normal]
+    black   = "#000000"
+    red     = "#ff0000"
+    green   = "#00ff00"
+    yellow  = "#ffff00"
+    blue    = "#0000ff"
+    magenta = "#ff00ff"
+    cyan    = "#00ffff"
+    white   = "#ffffff"
+
+  [colors.bright]
+    black   = "#555555"
+    red     = "#ff6e6e"
+    green   = "#69ff94"
+    yellow  = "#ffffa5"
+    blue    = "#d6acff"
+    magenta = "#ff92df"
+    cyan    = "#a4ffff"
+    white   = "#ffffff"
+
+# Mouse
+[mouse]
+hide_when_typing = true

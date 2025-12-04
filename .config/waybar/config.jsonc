@@ -1,0 +1,19 @@
+{
+    // Bar's height in pixels.
+    "height": 20,
+    
+    // Show only on the laptop's display.
+    //"output": "eDP-1",
+
+    // Modules positioning.
+    "modules-right": [
+        "battery"
+    ],
+
+    // Battery module.
+    "battery": {
+        "tooltip": false,
+        "interval": 60,
+        "format": "BAT: {capacity}%",
+    }
+}

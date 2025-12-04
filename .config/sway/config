@@ -1,0 +1,17 @@
+include default_config.sway
+
+### Variables
+set $mod Mod4
+
+# Home row direction keys, like vim
+set $left h
+set $down j
+set $up k
+set $right l
+
+# Preferred applications.
+set $term alacritty
+set $menu wmenu-run
+
+include output.sway
+include key_bindings.sway
