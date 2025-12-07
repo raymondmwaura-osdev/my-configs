@@ -9,11 +9,21 @@
     "modules-right": [
         "battery"
     ],
+    "modules-center": [
+        "clock"
+    ],
 
     // Battery module.
     "battery": {
         "tooltip": false,
         "interval": 60,
         "format": "BAT: {capacity}%",
+    },
+
+    // Clock module.
+    "clock": {
+        "format": "{:%a, %d %H:%M}",
+        "interval": 60,
+        "tooltip": false
     }
 }
