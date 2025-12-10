@@ -33,3 +33,6 @@
 # Mouse
 [mouse]
 hide_when_typing = true
+
+[window]
+opacity = 0.9
