@@ -12,3 +12,7 @@ bar {
 
 # Window borders.
 default_border none
+
+# Gaps
+gaps outer 5
+gaps inner 5
