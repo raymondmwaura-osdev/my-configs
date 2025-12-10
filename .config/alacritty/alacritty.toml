@@ -2,7 +2,7 @@
 # Colors
 [colors]
   [colors.primary]
-    foreground = "#00ffff"
+    foreground = "#00dfdf"
     background = "#000000"
     dim_foreground = "#007d7d"
 
