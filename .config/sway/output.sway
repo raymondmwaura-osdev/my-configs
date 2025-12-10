@@ -3,7 +3,7 @@ output eDP-1 position 0,0
 output HDMI-A-1 position 1366,0
 
 # Wallpaper.
-#output * background ~/Pictures/wallpapers/cross.jpg fill
+output * background ./wallpapers/002.jpg fill
 
 # Bar.
 bar {
