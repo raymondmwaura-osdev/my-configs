@@ -7,13 +7,16 @@
 /* Battery Module. */
 #battery {
     background-color: black;
-    border-radius: 2px;
-    padding: 0 10px;
+    border-radius: 5px;
+    padding: 0 5px;
     min-width: 0;
     font-weight: bold;
 }
 
 /* Clock Module. */
 #clock {
+    background-color: black;
+    border-radius: 5px;
+    padding: 0 5px;
     font-weight: bold;
 }
