@@ -52,4 +52,4 @@ if [ $? != 0 ]; then
     tmux new-window -n tests -t $SESSION -c $KEYSTASH_DIR/tests
 fi
 
-tmux attach -t keystash
+tmux attach -t keystash -c ~ # Use `-c ~` to reset the default path where new sessions will be opened.
