@@ -17,10 +17,7 @@ bindsym XF86AudioMicMute exec wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle
 
 # Keys.
 input "type:keyboard" {
-    # Set right alt as compose key.
-    xkb_options "compose:ralt"
-    # Swap Control and Caps Lock.
-    xkb_options "ctrl:swapcaps"
+    xkb_options "compose:ralt,ctrl:swapcaps"
 }
 
 # Move workspace across outputs.
