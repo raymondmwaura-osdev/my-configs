@@ -15,4 +15,5 @@ default_border none
 
 # Gaps
 gaps outer 5
+gaps top 0
 gaps inner 5
