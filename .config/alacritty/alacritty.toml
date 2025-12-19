@@ -4,11 +4,11 @@
   [colors.primary]
     foreground = "#dfdfdf"
     background = "#000000"
-    dim_foreground = "#007d7d"
+    dim_foreground = "#7d7d7d"
 
   [colors.cursor]
     text = "#000000"
-    cursor = "#00dddd"
+    cursor = "#dfdfdf"
 
   [colors.normal]
     black   = "#000000"
@@ -27,7 +27,7 @@
     yellow  = "#ffffa5"
     blue    = "#d6acff"
     magenta = "#ff92df"
-    cyan    = "#a4ffff"
+    cyan    = "#00dfdf"
     white   = "#ffffff"
 
 # Mouse
@@ -35,4 +35,4 @@
 hide_when_typing = true
 
 [window]
-opacity = 0.7
+opacity = 0.8
