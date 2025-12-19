@@ -41,7 +41,7 @@
 ######################################################################
 
 SESSION="keystash"
-KEYSTASH_DIR=/mnt/data/Raymond/keystash
+KEYSTASH_DIR=/mnt/data/keystash
 
 tmux has -t keystash 2> /dev/null
 if [ $? != 0 ]; then
