@@ -2,13 +2,13 @@
 # Colors
 [colors]
   [colors.primary]
-    foreground = "#ffffff"
+    foreground = "#dfdfdf"
     background = "#000000"
     dim_foreground = "#7d7d7d"
 
   [colors.cursor]
     text = "#000000"
-    cursor = "#ffffff"
+    cursor = "#dfdfdf"
 
   [colors.normal]
     black   = "#000000"
