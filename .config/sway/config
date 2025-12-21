@@ -11,7 +11,7 @@ set $right l
 
 # Preferred applications.
 set $term alacritty
-set $menu wmenu-run
+set $menu wofi
 
 include output.sway
 include key_bindings.sway
