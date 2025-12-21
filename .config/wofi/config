@@ -1,0 +1,21 @@
+# Search $PATH for executables and launch them.
+mode=run
+
+# Run programs using the specified terminal.
+term=alacritty
+
+# Hide scroll bar.
+hide_scroll=true
+
+# Enable case insensitive search.
+insensitive=true
+
+# Use dark theme.
+gtk_dark=true
+
+#
+width=25%
+height=25%
+
+#
+close_on_focus_loss=true
