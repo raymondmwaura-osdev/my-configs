@@ -36,3 +36,21 @@ hide_when_typing = true
 
 [window]
 opacity = 0.8
+
+# Requires 'ttf-jetbrains-mono-nerd' to be installed on Arch.
+[font]
+[font.normal]
+family = "JetBrainsMono Nerd Font"
+style = "Regular"
+
+[font.bold]
+family = "JetBrainsMono Nerd Font"
+style = "Bold"
+
+[font.italic]
+family = "JetBrainsMono Nerd Font"
+style = "Italic"
+
+[font.bold_italic]
+family = "JetBrainsMono Nerd Font"
+style = "Bold Italic"
