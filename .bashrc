@@ -12,3 +12,6 @@ PS1='[\u@\h \W]\$ '
 # Default Editor.
 EDITOR=nvim
 VISUAL=nvim	# Overrides EDITOR for full-screen editors.
+
+# PATH
+PATH=$PATH:/home/raymond/.local/bin
