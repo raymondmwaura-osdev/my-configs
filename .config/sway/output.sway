@@ -3,7 +3,8 @@ output eDP-1 position 0,0
 output HDMI-A-1 position 1366,0
 
 # Wallpaper.
-output * background ./wallpapers/archwave.png fill
+# Requires `archlinux-wallpaper` to be installed.
+output * background /usr/share/backgrounds/archlinux/awesome.png fill
 
 # Bar.
 bar {
