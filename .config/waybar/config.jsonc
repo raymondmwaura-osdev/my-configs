@@ -1,10 +1,7 @@
 {
-    // Bar's height in pixels.
+    "position": "top",
     "height": 20,
     
-    // Show only on the laptop's display.
-    //"output": "eDP-1",
-
     // Modules positioning.
     "modules-right": [
         "battery"
@@ -12,12 +9,17 @@
     "modules-center": [
         "clock"
     ],
+    "modules-left": [
+        "sway/workspaces"
+    ],
 
     // Battery module.
     "battery": {
+        "bat": "BAT0",
+        "adapter": "ADP1",
         "tooltip": false,
         "interval": 60,
-        "format": "BAT: {capacity}%",
+        "format": "{capacity}%"
     },
 
     // Clock module.
@@ -25,5 +27,11 @@
         "format": "{:%a, %d %H:%M}",
         "interval": 60,
         "tooltip": false
+    },
+
+    // Workspaces module.
+    "sway/workspaces": {
+        "current-only": true
     }
+
 }

@@ -1,24 +1,29 @@
 #waybar {
     background-color: rgba(0, 0, 0, 0); /* Fully transparent */
-    box-shadow: none;                    /* Remove any shadow */
+    box-shadow: none;
     color: cyan;
+    padding: 0;
+    margin: 0;
 }
 
-/* Battery Module. */
-#battery {
-    background-color: black;
-    border-radius: 5px;
-    padding: 0 5px;
-    min-width: 0;
-    font-weight: bold;
-    margin: 2 2px;
-}
-
-/* Clock Module. */
+#battery,
 #clock {
+    /* Prevent GTK from applying default minimum heights. */
     background-color: black;
     border-radius: 5px;
-    padding: 0 5px;
-    margin: 2 0px;
     font-weight: bold;
+    min-height: 0;
+    min-width: 0;
+    padding: 0 5;
+    margin: 2;
+}
+
+/* Workspace Module. */
+#workspaces button {
+    background-color: black;
+    color: cyan;
+    min-width: 0;
+    min-height: 0;
+    margin: 1;
+    padding: 0 5;
 }
