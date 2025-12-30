@@ -7,6 +7,8 @@
 }
 
 #battery,
+#memory,
+#cpu,
 #clock {
     /* Prevent GTK from applying default minimum heights. */
     background-color: black;

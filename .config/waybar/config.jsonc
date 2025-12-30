@@ -4,6 +4,8 @@
     
     // Modules positioning.
     "modules-right": [
+        "cpu",
+        "memory",
         "battery"
     ],
     "modules-center": [
@@ -12,24 +14,31 @@
     "modules-left": [
         "sway/workspaces"
     ],
+    
+    "cpu": {
+        "format": "CPU: {usage}%",
+        "interval": 1
+    },
 
-    // Battery module.
+    "memory": {
+        "format": "MEM: {percentage}%",
+        "interval": 10
+    },
+
     "battery": {
         "bat": "BAT0",
         "adapter": "ADP1",
         "tooltip": false,
         "interval": 60,
-        "format": "{capacity}%"
+        "format": "BAT:{capacity}%"
     },
 
-    // Clock module.
     "clock": {
         "format": "{:%a, %d %H:%M}",
         "interval": 60,
         "tooltip": false
     },
 
-    // Workspaces module.
     "sway/workspaces": {
         "current-only": true
     }
