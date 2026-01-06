@@ -46,6 +46,7 @@ KEYSTASH_DIR=/mnt/data/keystash
 tmux has -t keystash 2> /dev/null
 if [ $? != 0 ]; then
     tmux new-session -d -s $SESSION -n run -c $KEYSTASH_DIR
+    tmux send-keys -t ${SESSION}:run "source venv/bin/activate" Enter
     tmux new-window -n src_nvim -t $SESSION -c $KEYSTASH_DIR/src nvim
     tmux new-window -n src -t $SESSION -c $KEYSTASH_DIR/src
     tmux new-window -n tests_nvim -t $SESSION -c $KEYSTASH_DIR/tests nvim
