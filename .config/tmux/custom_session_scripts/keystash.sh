@@ -47,11 +47,11 @@ tmux has -t keystash 2> /dev/null
 if [ $? != 0 ]; then
     tmux new-session -d -s $SESSION -n run -c $KEYSTASH_DIR
     tmux send-keys -t ${SESSION}:run "source venv/bin/activate" Enter
-    tmux new-window -n src_nvim -t $SESSION -c $KEYSTASH_DIR/src nvim
-    tmux new-window -n src -t $SESSION -c $KEYSTASH_DIR/src
-    tmux new-window -n tests_nvim -t $SESSION -c $KEYSTASH_DIR/tests nvim
-    tmux new-window -n tests -t $SESSION -c $KEYSTASH_DIR/tests
-    tmux new-window -n docs -t $SESSION -c $KEYSTASH_DIR/docs
+    tmux new-window -d -n src_nvim -t $SESSION -c $KEYSTASH_DIR/src nvim
+    tmux new-window -d -n src -t $SESSION -c $KEYSTASH_DIR/src
+    tmux new-window -d -n tests_nvim -t $SESSION -c $KEYSTASH_DIR/tests nvim
+    tmux new-window -d -n tests -t $SESSION -c $KEYSTASH_DIR/tests
+    tmux new-window -d -n docs -t $SESSION -c $KEYSTASH_DIR/docs
 fi
 
 tmux attach -t keystash -c ~ # Use `-c ~` to reset the default path where new sessions will be opened.
