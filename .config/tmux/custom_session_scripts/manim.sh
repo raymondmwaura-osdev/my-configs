@@ -1,3 +1,4 @@
+#!/bin/bash
 # Set up tmux environment for learning manim.
 SESSION=manim
 MANIM_DIR=/mnt/data/python-notes-and-insights/manim
