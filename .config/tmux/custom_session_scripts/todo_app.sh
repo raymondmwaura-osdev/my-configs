@@ -12,7 +12,7 @@ cd "$(dirname $0)"
 source web_dev.sh 0 # 'source' to be able to access its variables.
 
 # Add windows.
-function tmux_has_window {
+tmux_has_window() {
     # Check if the tmux session $SESSION contains the specified window.
     # The name of the window is expected to be in $1.
     if tmux list-windows -t $SESSION \
@@ -31,3 +31,5 @@ fi
 if ! tmux_has_window code_todo_app; then
     tmux new-window -d -t $SESSION -n code_todo_app -c $PROJECT_DIR nvim
 fi
+
+tmux attach -t $SESSION -c ~
