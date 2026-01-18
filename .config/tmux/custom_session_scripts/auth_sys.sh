@@ -26,6 +26,7 @@ tmux_has_window() {
 
 if ! tmux_has_window auth_sys; then
     tmux new-window -d -t $SESSION -n auth_sys -c $PROJECT_DIR
+    tmux send-keys -t $SESSION:auth_sys "source venv/bin/activate" Enter
 fi
 
 if ! tmux_has_window code_auth_sys; then
