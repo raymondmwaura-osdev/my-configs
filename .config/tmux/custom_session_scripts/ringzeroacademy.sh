@@ -8,4 +8,4 @@ if ! tmux has-session -t $SESSION 2> /dev/null ; then
     tmux new-window -d -t $SESSION -c $WORKING_DIR nvim
 fi
 
-tmux attach -t $SESSION
+tmux attach -t $SESSION -c ~
