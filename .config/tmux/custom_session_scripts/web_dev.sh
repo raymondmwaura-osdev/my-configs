@@ -13,10 +13,8 @@
 #
 # The session has the following windows:
 #   1. 'notes': A terminal opened in $NOTES_DIR. This terminal can be used for things
-#       that can't be done in an editor, like using git, moving and removing files, etc.
-#   2. 'html': An nvim session opened in the directory containing HTML notes.
-#   3. 'css': An nvim session opened in the directory containing CSS notes.
-#   4. 'javascript': An nvim session opened in the directory containing JavaScript notes.
+#       that can't be done in an editor.
+#   2. 'nvim_notes': An nvim session opened in $NOTES_DIR.
 ATTACH=${1:-1}
 SESSION="web_dev"
 NOTES_DIR=/mnt/data/FullStackJournal
@@ -25,9 +23,7 @@ NOTES_DIR=/mnt/data/FullStackJournal
 tmux has -t $SESSION 2> /dev/null
 if [[ $? != 0 ]]; then
     tmux new-session -d -s $SESSION -n notes -c $NOTES_DIR
-    tmux new-window -d -t $SESSION -n html -c ${NOTES_DIR}/html/ nvim
-    tmux new-window -d -t $SESSION -n css -c ${NOTES_DIR}/css/ nvim
-    tmux new-window -d -t $SESSION -n javascript -c ${NOTES_DIR}/javascript/ nvim
+    tmux new-window -d -t $SESSION -n nvim_notes -c ${NOTES_DIR} nvim
 fi
 
 # Attach the session.
