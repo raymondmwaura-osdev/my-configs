@@ -1,5 +1,5 @@
 require("nvim-treesitter.configs").setup {
- ensure_installed = { "lua", "sway", "python", "markdown", "bash", "toml", "javascript", "html", "css"},
+ ensure_installed = { "lua", "sway", "python", "markdown", "bash", "toml", "javascript", "html", "css", "typescript"},
  sync_install = true,
  auto_install = false,
  highlight = {
