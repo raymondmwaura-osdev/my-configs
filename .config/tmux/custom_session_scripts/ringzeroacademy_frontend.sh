@@ -1,7 +1,7 @@
 #!/bin/bash
 
 SESSION=ringzeroacademy_frontend
-REPO_DIR=/mnt/data/RingZeroAcademy/ringzeroacademy_frontend
+REPO_DIR=/mnt/data/RingZeroAcademy/frontend
 
 if ! tmux has-session -t $SESSION 2> /dev/null ; then
     tmux new -d -s $SESSION -c $REPO_DIR -n editor nvim
