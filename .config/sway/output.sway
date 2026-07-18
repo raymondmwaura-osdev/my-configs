@@ -4,7 +4,9 @@ output HDMI-A-1 position 1366,0
 
 # Wallpaper.
 # Requires `archlinux-wallpaper` to be installed.
-output * background /usr/share/backgrounds/archlinux/wave.png fill
+# NOTE: This command uses `swaybg` to set the wallpaper. Make sure its installed.
+# `pacman -S swaybg`.
+output * background ./wallpapers/arch_hero_wallpaper_by_rahremix.png fill
 
 # Bar.
 bar {
